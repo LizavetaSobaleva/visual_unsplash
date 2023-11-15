@@ -50,7 +50,7 @@ const MainPage = () => {
     <Container>
       <Header>
         <Input
-          placeholder="Search free high-resolution photos"
+          placeholder="Search photos"
           type="search"
           value={search}
           onKeyPress={pressHandler}
@@ -68,7 +68,9 @@ const MainPage = () => {
                       {t.title}
                     </Prompt>
                   ) : (
-                    <Prompt>No results found</Prompt>
+                    <Prompt>
+                      No results found
+                    </Prompt>
                   )
                 )
               )}
@@ -123,7 +125,7 @@ const Prompt = styled.li`
   background: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   border: none;
-  color: #3c354e;
+  color: linear-gradient(90deg, rgba(238,202,82,1) 0%, rgba(231,60,126,1) 20%, rgba(35,166,213,1) 40%, rgba(35,213,171,1) 60%, rgba(238,202,82,1) 80%, rgba(231,60,126,1) 100%);
   font-size: 1rem;
   font-weight: bold;
   transition: all 0.4s ease;

@@ -39,7 +39,7 @@ const ImagesPage = () => {
   }
   return (
     <>
-      <Header>
+      <Content>
         <Input
           placeholder="Search photos"
           type="search"
@@ -49,12 +49,12 @@ const ImagesPage = () => {
         <ImagesContainer>
           <ImageList></ImageList>
         </ImagesContainer>
-      </Header>
+      </Content>
     </>
   );
 };
 
-const Header = styled.div`
+const Content = styled.div`
   margin: 5vh 5vw;
   min-width: 300px;
   height: 100vh;
